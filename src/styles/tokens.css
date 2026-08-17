@@ -1,0 +1,25 @@
+:root {
+  --ink: #4a3a5c;
+  --paper-line: #e6d6f0;
+  --glass-bg: rgba(255, 255, 255, .55);
+  --glass-border: rgba(255, 255, 255, .7);
+  --green: #3a7d3a;
+  --amber: #b57c1f;
+  --gray: #666;
+  --red: #b53c3c;
+  --purple: #b191f0;
+  --font: 'Nanum Gothic', 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  min-height: 100vh;
+  color: var(--ink);
+  background: linear-gradient(160deg, #eee0fb 0%, #fbe4f0 55%, #e8ecfc 100%);
+}

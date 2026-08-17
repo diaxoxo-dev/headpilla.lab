@@ -1,0 +1,102 @@
+.panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: min(380px, 92vw);
+  height: 100%;
+  background: rgba(255, 255, 255, .85);
+  backdrop-filter: blur(20px);
+  border-left: 1px solid var(--glass-border);
+  box-shadow: -8px 0 30px rgba(177, 145, 240, .2);
+  transform: translateX(100%);
+  transition: .25s;
+  padding: 22px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.panel.open {
+  transform: translateX(0);
+}
+
+.close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: var(--ink);
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 15px;
+  margin-bottom: 10px;
+  padding-right: 24px;
+}
+
+.log {
+  font-size: 9.5px;
+  color: #8a7599;
+  margin-bottom: 14px;
+  font-family: monospace;
+}
+
+.kv {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  padding: 6px 0;
+  border-bottom: 1px dashed var(--paper-line);
+}
+
+.note {
+  font-size: 11px;
+  background: rgba(240, 184, 110, .15);
+  border: 1px solid rgba(240, 184, 110, .4);
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 14px;
+}
+
+.actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 8px;
+}
+
+.approve,
+.reject {
+  flex: 1;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 11px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.approve {
+  background: var(--green);
+  color: #fff;
+}
+
+.reject {
+  background: var(--red);
+  color: #fff;
+}
+
+.noApproval {
+  font-size: 11px;
+  color: #6b6455;
+}
+
+/* Breakpoint: tablet 이상에서는 뷰포트에 딱 붙지 않도록 그림자를 살짝 키움 */
+@media (min-width: 768px) {
+  .panel {
+    box-shadow: -12px 0 36px rgba(177, 145, 240, .25);
+  }
+}

@@ -1,0 +1,43 @@
+.card {
+  background: var(--hp-surface);
+  border-radius: var(--hp-radius-lg);
+  padding: 16px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
+.badge {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--hp-radius-md);
+  background: var(--hp-primary-soft-bg);
+  color: var(--hp-primary);
+  font-family: var(--hp-font);
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge.warn {
+  background: var(--hp-warn-bg);
+  color: var(--hp-warn-ink);
+}
+
+.label {
+  font-family: var(--hp-font);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--hp-muted);
+}
+
+.sub {
+  font-family: var(--hp-font);
+  font-size: 11px;
+  color: var(--hp-muted);
+}

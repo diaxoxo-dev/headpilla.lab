@@ -1,0 +1,9 @@
+node_modules
+dist
+dev.log
+dev.err.log
+
+# secrets
+.env
+.env.local
+.env.*.local

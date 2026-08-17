@@ -1,0 +1,61 @@
+/* 모바일 전용(393px 기준) 디자인이라 breakpoint를 나누지 않고,
+   넓은 화면에서는 고정폭 카드로 중앙 정렬한다 */
+.viewport {
+  min-height: 100vh;
+  background: #f3f2fa;
+  display: flex;
+  justify-content: center;
+}
+
+.phone {
+  width: 100%;
+  max-width: 430px;
+  min-height: 100vh;
+  /* Figma 그라디언트 핸들 실측: 위쪽은 흰색, 아래로 갈수록 연한 하늘색 → 파란색 */
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff 32%, #eaf3fe 55%, #72b5fb 100%);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--hp-font);
+  color: var(--hp-ink);
+  position: relative;
+}
+
+/* Figma의 Ellipse 513/514 — 화면 하단 좌우 양쪽에서 번지는 부드러운 방사형 블롭.
+   .phone에 직접 overflow를 걸면 overflow-x/overflow-y 중 하나만 지정해도
+   스펙상 나머지 축이 auto로 바뀌어 버블 오프셋만큼 페이지 스크롤이 생기므로,
+   전용 래퍼에 overflow:hidden(양쪽 다)을 걸어 완전히 분리해서 클리핑한다. */
+.blobs {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.blobLeft,
+.blobRight {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  bottom: -160px;
+  border-radius: 50%;
+}
+
+.blobLeft {
+  left: -160px;
+  background: radial-gradient(circle, #68a2ff 0%, rgba(241, 233, 244, 0) 70%);
+}
+
+.blobRight {
+  right: -160px;
+  background: radial-gradient(circle, #7badfe 0%, rgba(241, 233, 244, 0) 70%);
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px 32px;
+  position: relative;
+  z-index: 1;
+}

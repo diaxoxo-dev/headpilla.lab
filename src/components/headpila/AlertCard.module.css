@@ -1,0 +1,66 @@
+.card {
+  background: var(--hp-warn-bg);
+  border-radius: var(--hp-radius-sm);
+  padding: 16px;
+}
+
+.card.info {
+  background: var(--hp-surface);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.avatar {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--hp-radius-md);
+  background: var(--hp-primary-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1px;
+}
+
+.body {
+  min-width: 0;
+}
+
+.eyebrow {
+  font-family: var(--hp-font);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--hp-warn-ink);
+  margin-bottom: 8px;
+}
+
+.info .eyebrow {
+  font-size: 10px;
+  color: var(--hp-primary-dark);
+  margin-bottom: 2px;
+}
+
+.title {
+  font-family: var(--hp-font);
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--hp-ink-strong);
+  margin-bottom: 6px;
+}
+
+.desc {
+  font-family: var(--hp-font);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--hp-ink-strong);
+  line-height: 1.2;
+  white-space: pre-line;
+}
+
+.info .desc {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--hp-ink);
+  line-height: 1.65;
+}

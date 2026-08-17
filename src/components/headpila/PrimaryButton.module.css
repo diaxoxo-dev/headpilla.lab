@@ -1,0 +1,25 @@
+.btn {
+  font-family: var(--hp-font);
+  font-weight: 700;
+  font-size: 18px;
+  border: none;
+  border-radius: var(--hp-radius-pill);
+  padding: 18px 24px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.filled {
+  background: var(--hp-primary);
+  color: #ffffff;
+}
+
+.filled:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.subtle {
+  background: var(--hp-primary-soft-bg);
+  color: var(--hp-primary);
+}

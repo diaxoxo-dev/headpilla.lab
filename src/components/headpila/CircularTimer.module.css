@@ -1,0 +1,19 @@
+.svg {
+  flex-shrink: 0;
+}
+
+.track {
+  stroke: #e9e9ff;
+}
+
+.progress {
+  stroke: var(--hp-primary-strong);
+  transition: stroke-dashoffset 0.3s linear;
+}
+
+.label {
+  font-family: var(--hp-font);
+  font-size: 19px;
+  font-weight: 800;
+  fill: var(--hp-primary-strong);
+}

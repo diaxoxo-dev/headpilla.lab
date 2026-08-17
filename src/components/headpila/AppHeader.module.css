@@ -1,0 +1,44 @@
+.header {
+  padding: 12px 24px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+
+.greeting {
+  font-family: var(--hp-font);
+  font-size: 19px;
+  font-weight: 600;
+  color: #434343;
+}
+
+.backLink {
+  font-family: var(--hp-font);
+  font-size: 19px;
+  font-weight: 600;
+  color: #434343;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.chevron {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.logo {
+  font-family: var(--hp-font);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.logoHead {
+  color: var(--hp-primary-dark);
+}
+
+.logoPila {
+  color: #000000;
+}

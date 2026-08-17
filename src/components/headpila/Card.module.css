@@ -1,0 +1,16 @@
+.card {
+  background: var(--hp-surface);
+  box-shadow: 0 6px 18px rgba(74, 58, 92, 0.06);
+}
+
+.sm {
+  border-radius: var(--hp-radius-sm);
+}
+
+.md {
+  border-radius: var(--hp-radius-md);
+}
+
+.lg {
+  border-radius: var(--hp-radius-lg);
+}

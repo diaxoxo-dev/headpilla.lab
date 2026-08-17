@@ -1,0 +1,67 @@
+.topbar {
+  padding: 16px 28px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--glass-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.backLink {
+  font-size: 11px;
+  color: var(--purple);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.sub {
+  font-size: 10px;
+  color: #8a7599;
+  margin-top: 3px;
+}
+
+.error {
+  padding: 24px;
+  font-size: 12px;
+  color: #b53c3c;
+}
+
+.stageList {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 28px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: padding-right .25s;
+}
+
+/* Breakpoint 768px: 원본은 목록형뿐이었으나, 태블릿 이상에서는 2열 그리드로 확장 */
+@media (min-width: 768px) {
+  .stageList {
+    max-width: 720px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+  }
+
+  /* 우측 슬라이드 패널이 열려 있을 때 카드 그리드가 패널 밑에 가려지지 않도록
+     패널 너비만큼 오른쪽 여백을 확보해 콘텐츠를 왼쪽으로 밀어낸다 */
+  .panelOpen {
+    padding-right: min(380px, 92vw);
+  }
+}
+
+/* Breakpoint 1280px: 데스크톱 와이드 화면에서는 3열 + 넓은 컨테이너 */
+@media (min-width: 1280px) {
+  .stageList {
+    max-width: 1100px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

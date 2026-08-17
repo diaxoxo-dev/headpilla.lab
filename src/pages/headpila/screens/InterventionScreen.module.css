@@ -1,0 +1,210 @@
+.timerCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.timerText {
+  min-width: 0;
+}
+
+.timerTitle {
+  font-family: var(--hp-font);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--hp-ink-strong);
+  margin-bottom: 6px;
+}
+
+.timerDesc {
+  font-family: var(--hp-font);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--hp-ink-strong);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.timerStatus {
+  font-family: var(--hp-font);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--hp-primary);
+}
+
+.methodHeading {
+  font-family: var(--hp-font);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--hp-muted);
+  margin-bottom: 12px;
+}
+
+.stepsCard {
+  padding: 0 20px;
+  margin-bottom: 24px;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 0;
+}
+
+.stepBadge {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  border-radius: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--hp-font);
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 1px;
+}
+
+.stepBadge1 {
+  background: var(--hp-primary-soft-bg);
+  color: var(--hp-primary);
+}
+
+.stepBadge2 {
+  background: #77b9ff;
+  color: #fff;
+}
+
+.stepBadge3 {
+  background: var(--hp-primary);
+  color: #fff;
+}
+
+.stepTitle {
+  font-family: var(--hp-font);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--hp-ink);
+  margin-bottom: 2px;
+}
+
+.stepDesc {
+  font-family: var(--hp-font);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--hp-ink-soft);
+}
+
+.cta {
+  margin-top: auto;
+}
+
+.resultImage {
+  width: 160px;
+  margin-bottom: 8px;
+}
+
+.resultTitle {
+  font-family: var(--hp-font);
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.43;
+  margin-bottom: 12px;
+}
+
+.resultDesc {
+  font-family: var(--hp-font);
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--hp-ink-soft);
+  line-height: 1.64;
+  margin-bottom: 24px;
+}
+
+.resultStats {
+  display: flex;
+  gap: 14px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.resultStatCard {
+  flex: 1;
+  background: var(--hp-surface);
+  border: 1px solid #f0f0f0;
+  border-radius: var(--hp-radius-lg);
+  padding: 16px 14px;
+  text-align: left;
+}
+
+.resultBadgeRow {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.resultBadge {
+  padding: 6px 10px;
+  border-radius: var(--hp-radius-md);
+  background: var(--hp-primary-soft-bg);
+  color: var(--hp-primary);
+  font-family: var(--hp-font);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.resultBadge.warn {
+  background: var(--hp-warn-bg);
+  color: var(--hp-warn-ink);
+}
+
+.resultBadgeWide {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+  border-radius: var(--hp-radius-sm);
+  background: var(--hp-primary-soft-bg);
+  color: var(--hp-primary);
+  font-family: var(--hp-font);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.resultStatLabel {
+  font-family: var(--hp-font);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--hp-muted);
+  margin-bottom: 4px;
+}
+
+.resultStatSub {
+  font-family: var(--hp-font);
+  font-size: 11px;
+  color: var(--hp-muted);
+}
+
+.resultActions {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.resultRestart {
+  flex: 0 0 auto;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.resultHome {
+  flex: 1;
+}

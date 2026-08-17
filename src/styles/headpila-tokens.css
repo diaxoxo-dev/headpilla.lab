@@ -1,0 +1,19 @@
+:root {
+  --hp-primary: #3a9aff;
+  --hp-primary-strong: #449efe;
+  --hp-primary-dark: #2d5fa8;
+  --hp-primary-soft-bg: #eff2fd;
+  --hp-ink: #1a1e2a;
+  --hp-ink-soft: #4a5060;
+  --hp-ink-strong: #2c2420;
+  --hp-muted: #3a3f38;
+  --hp-border: #e0e4ec;
+  --hp-surface: #ffffff;
+  --hp-warn-bg: #fff2ee;
+  --hp-warn-ink: #c05030;
+  --hp-radius-sm: 10px;
+  --hp-radius-md: 14px;
+  --hp-radius-lg: 20px;
+  --hp-radius-pill: 60px;
+  --hp-font: 'Pretendard', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}

@@ -1,0 +1,10 @@
+.chip {
+  font-family: var(--hp-font);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--hp-primary);
+  background: var(--hp-primary-soft-bg);
+  border-radius: var(--hp-radius-lg);
+  padding: 6px 14px;
+  white-space: nowrap;
+}
