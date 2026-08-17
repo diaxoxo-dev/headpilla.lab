@@ -1,15 +1,12 @@
-/* 모바일 전용(393px 기준) 디자인이라 breakpoint를 나누지 않고,
-   넓은 화면에서는 고정폭 카드로 중앙 정렬한다 */
+/* 디바이스 기반 모바일 코딩 — 뷰포트 너비에 관계없이 항상 꽉 채운다 (고정폭/중앙정렬 카드 아님) */
 .viewport {
   min-height: 100vh;
-  background: #f3f2fa;
   display: flex;
   justify-content: center;
 }
 
 .phone {
   width: 100%;
-  max-width: 430px;
   min-height: 100vh;
   /* Figma 그라디언트 핸들 실측: 위쪽은 흰색, 아래로 갈수록 연한 하늘색 → 파란색 */
   background: linear-gradient(180deg, #ffffff 0%, #ffffff 32%, #eaf3fe 55%, #72b5fb 100%);
